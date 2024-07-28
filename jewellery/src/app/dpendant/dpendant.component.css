@@ -1,0 +1,111 @@
+.card {
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Zoom effect */
+  }
+  .card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Zoom effect */
+    box-shadow: 0 0 10px 5px rgb(128, 128, 128); /* Red shadow */
+  }
+  .card {
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Regular shadow */
+  }
+  
+.dropdown-submenu {
+  position: relative;
+  color: #a8741a;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  display: none; /* Hide submenu by default */
+}
+.dropdown-submenu:hover .dropdown-menu {
+  display: block; /* Show submenu on hover */
+}
+.dropdown-submenu:hover > .dropdown-toggle::after {
+  transform: rotate(-90deg); /* Rotate caret on hover */
+  color: #a8741a;
+}
+
+/* mouse over link */
+a:hover {
+color: red;
+}
+/* New style for nav items on hover */
+.nav-item.dropdown:hover .nav-link {
+  color: #a8741a;
+}
+
+
+/*line*/
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  background-color: #f0f0f0; /* Background color for the division */
+  padding: 10px; /* Optional: Add padding for better visual appearance */
+}
+.line-container::before,
+.line-container::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000000;
+}
+.line-container:not(:empty)::before {
+  margin-right: 10px;
+}
+.line-container:not(:empty)::after {
+  margin-left: 10px;
+}
+ .display-3 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #eaab00; /* Change font color to blue (#007bff) */
+  font-family: 'Comic Sans MS', cursive; /* Use cursive font */
+  font-weight: bold; /* Make text bold */
+}
+.line{
+  background-color: rgb(218, 218, 218); 
+  color: white;
+  padding: 10px; 
+  display:grid;
+}
+
+/*button*/
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body h5 {
+  margin-bottom: 10px;
+}
+
+.slider_price {
+  margin-top: 10px;
+}
+
+.card-body .d-flex {
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+.add-cart-btn {
+  flex-grow: 1;
+  margin-left: 5px;
+}

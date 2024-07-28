@@ -1,0 +1,159 @@
+<head>
+  <title>Chains</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Bootstrap JavaScript and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <!-- Script for custom Bootstrap validation -->
+</head>
+<nav class="navbar fixed navbar-expand-lg bg-dark navbar-dark">
+<div class="container-fluid">
+  <a class="navbar-brand" href="/home">Pranav Jewellery</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <ul class="navbar-nav mb-2 mb-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          All Jewellery
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/rings">Rings</a></li>
+          <li><a class="dropdown-item" routerLink="/bangles">Bangles</a></li>
+          <li><a class="dropdown-item" routerLink="/earringset">Earrings set</a></li>
+          <li><a class="dropdown-item" routerLink="/necklace">Necklaces</a></li>
+          <li><a class="dropdown-item" routerLink="/nosepin">Nose Pin</a></li>
+          <li><a class="dropdown-item" routerLink="/chains">Chains</a></li>
+          <li><a class="dropdown-item" routerLink="/bracelet">Bracelet</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown dropdown-center">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Category
+        </a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-submenu">
+            <a class="btn btn-warning dropdown-item dropdown-toggle" href="#">Men</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/rings">Rings</a></li>
+              <li><a class="dropdown-item" routerLink="/chains">Chains</a></li>
+              <li><a class="dropdown-item" routerLink="/bracelet">Bracelet</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="btn btn-warning dropdown-item dropdown-toggle" href="#">Women</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/earringset">Earrings</a></li>
+              <li><a class="dropdown-item" routerLink="/bracelet">Bracelet</a></li>
+              <li><a class="dropdown-item" routerLink="/rings">Rings</a></li>
+              <li><a class="dropdown-item" routerLink="/chains">Chains</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a class="btn btn-warning dropdown-item dropdown-toggle" href="#">Kids</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/bracelet">Bracelet</a></li>
+              <li><a class="dropdown-item" routerLink="/rings">Rings</a></li>
+              <li><a class="dropdown-item" routerLink="/chains">Chains</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Gold
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/grings">Engagement Rings</a></li>
+          <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">Gold coins</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/coin-five-ten">5 Gram</a></li>
+              <li><a class="dropdown-item" routerLink="/coin-five-ten">10 Gram</a></li>
+              <li><a class="dropdown-item" routerLink="/coin-100">50 Gram</a></li>
+              <li><a class="dropdown-item" routerLink="/coin-100">100 Gram</a></li>
+            </ul>
+          </li>
+          <li><a class="dropdown-item" routerLink="/gpendant">Pendants</a></li>
+          <li><a class="dropdown-item" routerLink="/gchains">Chains</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Diamond
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/dbangle">Bangles</a></li>
+          <li><a class="dropdown-item" routerLink="/dbracelet">Bracelets</a></li>
+          <li><a class="dropdown-item" routerLink="/dring">Rings</a></li>
+          <li><a class="dropdown-item" routerLink="/dpendant">Pendants</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" routerLink="/contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav><br>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner slider_area slider_black">
+      <div class="carousel-item active">
+        <img src="./assets/photos/slider/21.jpg" class="d-block w-100 carousel-image" alt="slider-1">
+        <div class="carousel-caption d-md-block text-center-left">
+          <h6>Exclusive offer -20% off this week</h6>
+          <h1 class="display-2">Necklace</h1>
+          <span>22 Carat gold necklace for wedding</span><br><br>
+          <h5><p class="slider_price">starting at <span>Rs. 75,999</span></p></h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="./assets/photos/slider/101.jpeg" class="d-block w-100 carousel-image" alt="slider-2">
+        <div class="carousel-caption d-md-block text-center-left">
+          <h6>Exclusive offer -40% off this week</h6>
+          <h1 class="display-2">Earings and Pendant</h1>
+          <span>Complete bridal set with white pearls</span><br><br>
+          <h5><p class="slider_price">starting at <span>Rs. 89,499</span></p></h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="./assets/photos/slider/3.jpg" class="d-block w-100 carousel-image" alt="slider-3">
+        <div class="carousel-caption d-md-block text-center-left">
+          <h6>Exclusive offer -10% off this week</h6>
+          <h1 class="display-2">Wedding Rings</h1>
+          <span>Special wedding rings for couples.</span><br><br>
+          <h5><p class="slider_price">starting at <span>Rs. 14,999</span></p></h5>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="./assets/photos/slider/98.jpg" class="d-block w-100 carousel-image" alt="slider-4">
+        <div class="carousel-caption d-md-block text-center-left">
+          <h6>Exclusive offer -50% off this week</h6>
+          <h1>Diamond Rings for couples</h1>
+          <span>Diamond cut rings.</span><br><br>
+          <h5><p class="slider_price">starting at <span>Rs. 1,99,999</span></p></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+<div *ngIf="goldPrice; else loading">
+  <h1>Gold Price: ₹{{ goldPrice }}</h1>
+</div>
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>
+<div *ngIf="error">
+  <p>{{ error }}</p>
+</div>

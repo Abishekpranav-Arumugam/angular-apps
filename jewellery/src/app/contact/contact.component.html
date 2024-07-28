@@ -1,0 +1,127 @@
+<head>
+    <title>Chains</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <!-- Script for custom Bootstrap validation -->
+  </head>
+  <nav class="navbar fixed navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home">Pranav Jewellery</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            All Jewellery
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/rings">Rings</a></li>
+            <li><a class="dropdown-item" routerLink="/bangles">Bangles</a></li>
+            <li><a class="dropdown-item" routerLink="/earringset">Earrings set</a></li>
+            <li><a class="dropdown-item" routerLink="/necklace">Necklaces</a></li>
+            <li><a class="dropdown-item" routerLink="/nosepin">Nose Pin</a></li>
+            <li><a class="dropdown-item" routerLink="/chains">Chains</a></li>
+            <li><a class="dropdown-item" routerLink="/bracelet">Bracelet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown dropdown-center">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="btn btn-warning dropdown-item dropdown-toggle" href="#">Men</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/rings">Rings</a></li>
+                <li><a class="dropdown-item" routerLink="/chains">Chains</a></li>
+                <li><a class="dropdown-item" routerLink="/bracelet">Bracelet</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="btn btn-warning dropdown-item dropdown-toggle" href="#">Women</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/earringset">Earrings</a></li>
+                <li><a class="dropdown-item" routerLink="/bracelet">Bracelet</a></li>
+                <li><a class="dropdown-item" routerLink="/rings">Rings</a></li>
+                <li><a class="dropdown-item" routerLink="/chains">Chains</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="btn btn-warning dropdown-item dropdown-toggle" href="#">Kids</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/bracelet">Bracelet</a></li>
+                <li><a class="dropdown-item" routerLink="/rings">Rings</a></li>
+                <li><a class="dropdown-item" routerLink="/chains">Chains</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gold
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/grings">Engagement Rings</a></li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Gold coins</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/coin-five-ten">5 Gram</a></li>
+                <li><a class="dropdown-item" routerLink="/coin-five-ten">10 Gram</a></li>
+                <li><a class="dropdown-item" routerLink="/coin-100">50 Gram</a></li>
+                <li><a class="dropdown-item" routerLink="/coin-100">100 Gram</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" routerLink="/gpendant">Pendants</a></li>
+            <li><a class="dropdown-item" routerLink="/gchains">Chains</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Diamond
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/dbangle">Bangles</a></li>
+            <li><a class="dropdown-item" routerLink="/dbracelet">Bracelets</a></li>
+            <li><a class="dropdown-item" routerLink="/dring">Rings</a></li>
+            <li><a class="dropdown-item" routerLink="/dpendant">Pendants</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+<div class="row" id="home-content-5">
+    <div class="col-12 p-5 d-flex flex-column align-items-center justify-content-center position-relative">
+        <h1 class="h5 text-danger text-center">Adorn yourself in elegance, our treasures await your sparkle.</h1><br><br>
+        <img src="./assets/chain/GOLD.jpg" style="width:auto;height: 450px;" alt="home-content" class="img-fluid">
+        <a class="display-2 text-success position-absolute top-5 start-50 translate-middle rounded" id="contact-us" href="">Contact Us</a>
+    </div>
+
+    <div class="col-12 p-5 bg-dark">
+        <h1 class="h5 text-light text-center">Follow and like us on</h1>
+        <div class="d-flex justify-content-center" data-aos="zoom-out-down">
+            <a href="" class="p-3 bg-light rounded m-3">
+                <img src="https://img.icons8.com/ios-glyphs/30/null/facebook-new.png" />
+            </a>
+            <a href="" class="p-3 bg-light rounded m-3">
+                <img src="https://img.icons8.com/ios-glyphs/30/null/instagram-new.png" />
+            </a>
+            <a href="" class="p-3 bg-light rounded m-3">
+                <img src="https://img.icons8.com/material-sharp/30/null/youtube-play.png" />
+            </a>
+        </div><br>
+        <p class="bg-white text-dark text-center px-2">
+            <b>Copyright &copy; 2023 Pranav Jewellery - All Rights Reserved</b>
+        </p>
+        
+    </div>
+</div>

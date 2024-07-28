@@ -1,0 +1,174 @@
+
+.dropdown-submenu {
+    position: relative;
+    color: #a8741a;
+  }
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none; /* Hide submenu by default */
+  }
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block; /* Show submenu on hover */
+  }
+  .dropdown-submenu:hover > .dropdown-toggle::after {
+    transform: rotate(-90deg); /* Rotate caret on hover */
+    color: #a8741a;
+  }
+  
+  /* mouse over link */
+a:hover {
+  color: red;
+}
+  /* New style for nav items on hover */
+  .nav-item.dropdown:hover .nav-link {
+    color: #a8741a;
+  }
+
+/*slider start*/
+
+
+.carousel-image {
+  height: 600px; /* or any desired height */
+  object-fit: cover;
+}
+.carousel-caption {
+  text-align: left;
+  left: 10%; /* Adjust as necessary */
+  right: auto;
+  bottom: 20%; /* Adjust as necessary */
+  transform: translateY(-50%);
+}
+.text-center-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider_price span, h6 {
+  color: #a8741a;
+}
+
+.slider_black .slider_content p {
+  color: #a8741a;
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 22px;
+}
+
+.slider_black .slider_content p.slider_price {
+  color: #fff;
+}
+.slider_black .slider_content p.slider_price span {
+  color: #a8741a;
+  margin-bottom: 0;
+}
+
+.slider_black .slider_content h1 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-family: "Baloo 2", serif;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .slider_black .slider_content h1 {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 8px;
+  }
+}
+
+.slider_black .slider_content span {
+  font-size: 24px;
+  color: #cccccc;
+  margin-bottom: 35px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .slider_black .slider_content span {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+.slider_black .slider_content a {
+  background: #a8741a;
+  margin-top: 30px;
+}
+
+.slider_black .slider_content a:hover {
+  background: #212121;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .slider_black .slider_content a {
+    margin-top: 43px;
+  }
+}
+
+.active .slider_content > span {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+  animation-delay: 0.7s;
+}
+
+.active .slider_content p,
+.active .slider_content h1,
+.active .slider_content a {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+  animation-delay: 0.3s;
+}
+
+.active .slider_content h1 {
+  animation-delay: 0.6s;
+}
+
+.active .slider_content a {
+  animation-delay: 0.9s;
+}
+.slider_content p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #242424;
+  margin-bottom: 11px;
+  text-transform: capitalize;
+}
+
+.slider_content h1 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #212121;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.slider_content p.slider_price {
+  color: #fff;
+  font-size: 18px;
+}
+
+.slider_content p.slider_price span {
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 8px;
+  color: #a8741a;
+  margin-bottom: 0;
+}
+
+.slider_content a {
+  font-weight: 500;
+  margin-top: 25px;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 35px;
+}
+
+/*slider ends*/
